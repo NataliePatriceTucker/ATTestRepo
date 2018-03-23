@@ -1,14 +1,4 @@
 
-@font-face {
-    font-family: 'Roboto Slab';
-    src: url("fonts/RobotoSlab-Bold-webfont.eot");
-    src: url("fonts/RobotoSlab-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/RobotoSlab-Bold-webfont.woff") format("woff"), url("fonts/RobotoSlab-Bold-webfont.ttf") format("truetype"), url("fonts/RobotoSlab-Bold-webfont.svg#roboto_slabbold") format("svg");
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  /* Body & HTML
-  -------------------------------------------------- */
   html {
     font-family: Calibri, Candara, Geneva, sans-serif;
   }
@@ -25,7 +15,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     font-size: 1em;
-    width: 75%;
+    width: 85%;
   }
   
 
