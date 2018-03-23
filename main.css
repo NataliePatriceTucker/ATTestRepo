@@ -25,6 +25,8 @@ table {
     padding: .33em;
     text-align: left;
   }
+  .small {
+      font-size: .8em;  }
   
   
   
