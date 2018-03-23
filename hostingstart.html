@@ -29,7 +29,7 @@
     </tr>
     <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/accordion/accordion.html">Accordion</a></td>
-        <td> <audio src="audio/accordion-nve.mp3" controls </audio></td>
+        <td> <audio src="audio/accordion-nve.mp3" controls></audio></td>
         <td>Fail</td>
         <td>Arrow keys do not move to next header</td>
     </tr>
@@ -41,7 +41,7 @@
     </tr>
     <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/breadcrumb/index.html">Breadcrumb</a></td>
-        <td><audio src="audio/breadcrumbs-nve.mp3" controls </audio></td>
+        <td><audio src="audio/breadcrumbs-nve.mp3" controls> </audio></td>
         <td>Pass</td>
         <td></td>
     </tr>
@@ -53,7 +53,7 @@
     </tr>
     <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/checkbox/checkbox-1/checkbox-1.html">Checkbox (Two State)</a></td>
-        <td><audio src="audio/checkbox1-nve.mp3" controls </audio></td>
+        <td><audio src="audio/checkbox1-nve.mp3" controls> </audio></td>
         <td>Pass</td>
         <td></td>
     </tr>
@@ -65,21 +65,21 @@
      </tr>
     <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.1pattern/listbox-combo.html">Combobox with Listbox</a></td>
-        <td><audio src="audio/listboxcombo-nve.mp3" controls </audio></td>
+        <td><audio src="audio/listboxcombo-nve.mp3" controls></audio> </td>
         <td>Pass</td>
         <td></td>
     </tr>
     <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.1pattern/grid-combo.html">Combobox with Grid </a></td>
-        <td><audio src="audio/listboxcombo-nve.mp3" controls </audio></td>
+        <td><audio src="audio/listboxcombo-nve.mp3" controls></audio></td>
         <td></td>
         <td></td>
     </tr>
     <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.0pattern/combobox-autocomplete-both.html">ARIA 1.0 Combobox With Both List and Inline Autocomplete</a></td>
-        <td><audio src="audio/"</td>
-        <td></td>
-        <td></td>
+        <td><audio src="audio/autocompletecomboboth-nve.mp3" controls></audio></td>
+        <td>Fail</td>
+        <td>NVDA doesn't pass through the up and down arrow for selection of combobox items</td>
     </tr>
     <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.0pattern/combobox-autocomplete-list.html">ARIA 1.0 Combobox With List Autocomplete </a></td>
@@ -89,8 +89,8 @@
     </tr>
     <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.0pattern/combobox-autocomplete-none.html">ARIA 1.0 Combobox without Autocomplete</a></td>
-        <td></td>
-        <td></td>
+        <td><audio src="audio/autocompletecombonone-nve.mp3" controls></audio></td>
+        <td>Pass</td>
         <td></td>
     </tr>
     <tr>
@@ -101,9 +101,9 @@
     </tr>
     <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/disclosure/disclosure-img-long-description.html">Image Disclosure</a></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td><audio src="audio/imagedisclosure-nve.mp3" controls></audio></td>
+        <td>Fail</td>
+        <td>Figure caption is read when the buttton has focus</td>
     </tr>
     <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/disclosure/disclosure-faq.html">FAQ Disclosure</a></td>
@@ -113,9 +113,9 @@
     </tr>
     <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/feed/feed.html">Feed</a></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td><audio src="audio/feed-nve.mp3"controls></audio></td>
+        <td>Fail</td>
+        <td>control + down and up arrows should move to next article but skips to a random point on an article 3 items down</td>
     </tr>
 	 <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/grid/LayoutGrids.html">Layout Grid</a></td>
@@ -125,8 +125,14 @@
     </tr>
     <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/grid/advancedDataGrid.html">Data Grid</a></td>
-        <td></td>
-        <td></td>
+        <td><audio src="audio/datagrid-nve.mp3"controls></audio></td>
+        <td>Fail</td>
+        <td>Right and left arrow don't move between cells. </td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/link/link.html">Link</a></td>
+        <td><audio src="audio/link-nve.mp3" controls></audio></td>
+        <td>Pass</td>
         <td></td>
     </tr>
     <tr>
@@ -137,9 +143,9 @@
     </tr>
     <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/listbox/listbox-collapsible.html">Dropdown Listbox</a></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td><audio src="audio/listboxcombo-nve.mp3" controls></audio></td>
+        <td>Fail</td>
+        <td>up and down arrow do not expand the list if collapsed</td>
     </tr>
     <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/listbox/listbox-rearrangeable.html">Rearrangeable Listbox</a></td>
@@ -149,9 +155,9 @@
     </tr>
 	 <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menubar/menubar-1/menubar-1.html">Navigation Menubar</a></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td><audio src="audio/menubar-nve.mp3" controls></audio></td>
+        <td>Fail</td>
+        <td>Space, enter, arrow keys do not expand menu</td>
     </tr>
     <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menubar/menubar-2/menubar-2.html">Editor Menubar</a></td>
@@ -174,8 +180,9 @@
     <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menu-button/menu-button-actions-active-descendant.html">Actions Menu Button Example Using aria-activedescendant</a></td>
         <td></td>
-        <td></td>
-        <td></td>
+        <td>Fail</td>
+        <td>Arrows do not open menu and move focus to first/last item
+        </td>
     </tr>
 	<tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/radio/radio-1/radio-1.html">Radio Group Example Using Roving tabindex</a></td>
@@ -185,8 +192,8 @@
     </tr>
     <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/radio/radio-2/radio-2.html">Radio Group Example Using aria-activedescendant</a></td>
-        <td></td>
-        <td></td>
+        <td><audio src="audio/radio2-nve.mp3" controls></audio></td>
+        <td>Pass</td>
         <td></td>
     </tr>
     <tr>
@@ -197,7 +204,7 @@
     </tr>
     <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/slider/slider-2.html">Slider Examples with aria-orientation and aria-valuetext</a></td>
-        <td></td>
+        <td><audio src="audio/slider2-nve.mp3" controls></audio></td>
         <td></td>
         <td></td>
     </tr>
@@ -209,8 +216,8 @@
     </tr>
 	<tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/table/table.html">Table</a></td>
-        <td></td>
-        <td></td>
+        <td><audio src="audio/table-nve.mp3" controls></audio></td>
+        <td>Pass</td>
         <td></td>
     </tr>
     <tr>
@@ -220,10 +227,9 @@
         <td></td>
     </tr>
     <tr>
-        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/tabs/tabs-1/tabs.html
-">Tabs with Automatic Activation</a></td>
-        <td></td>
-        <td></td>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/tabs/tabs-1/tabs.html">Tabs with Automatic Activation</a></td>
+        <td><audio src="audio/tabs-nve.mp3" controls></audio></td>
+        <td>Pass</td>
         <td></td>
     </tr>
     <tr>
@@ -234,8 +240,8 @@
     </tr>
     <tr>
         <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/treeview/treeview-1/treeview-1a.html">File Directory Treeview Example Using Computed Properties</a></td>
-        <td></td>
-        <td></td>
+        <td><audio src="audio/treeview1a-nve.mp3" controlx></audio></td>
+        <td>Pass</td>
         <td></td>
     </tr>
 	<tr>
@@ -245,9 +251,9 @@
         <td></td>
     </tr>
     <tr>
-        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/treeview/treeview-2/treeview-2b.html">Navigation Treeview Example Using Computed Properties</a></td>
-        <td></td>
-        <td></td>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/treeview/treeview-2/treeview-2a.html">Navigation Treeview Example Using Computed Properties</a></td>
+        <td><audio src="audio/treeview2a-nve.mp3" controls></audio></td>
+        <td>Pass</td>
         <td></td>
     </tr>
     <tr>
