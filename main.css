@@ -1,0 +1,32 @@
+
+  html {
+    font-family: Calibri, Candara, Geneva, sans-serif;
+  }
+  
+  body {
+    background: #fefefe;
+    border-top: 6px solid #1b75bc;
+    padding: 2.5em;
+  }
+
+
+table {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1em;
+    width: 100%;
+  }
+  
+
+  th,
+  td {
+    border: 1px solid #333;
+    padding: .33em;
+    text-align: left;
+  }
+  .small {
+      font-size: .8em;  }
+  
+  
+  

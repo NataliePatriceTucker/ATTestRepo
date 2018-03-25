@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Assistive Technology Conformance Test Repo</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    <header>
+        <h1>
+          Assistive Technology Conformance Test Repository
+        </h1>
+        <p>
+            The current state of the interpretation of the  design patterns provided in the W3c ARIA Authoring Practices 1.1 in NVDA +
+             Firefox and Narrator/ NVDA + Edge. 
+             
+        </p>
+        <p>
+            <strong>Created by:</strong> Natalie Patrice Tucker, and Tamas Geczy
+        </p>
+          <p class="small">
+            <a href="https://github.com/NataliePatriceTucker/ATTestRepo"><strong>Github Repo:</strong></a>
+        </p>
+          
+      </header>
+    <main>
+        <h2>NVDA/Edge</h2>
+<table>
+    <tr>
+        <th>Design Pattern</th>
+        <th>Audio</th>
+        <th>Results</th>
+        <th>Notes </th>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/accordion/accordion.html">Accordion</a></td>
+        <td> <audio src="audio/accordion-nve.mp3" controls></audio></td>
+        <td>Fail</td>
+        <td>Arrow keys do not move to next header</td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/alert/index.html">Alert</a></td>
+        <td> <audio src="audio/alert-nve.mp3" controls> </audio> </td>
+        <td> Fail</td>
+        <td>Tested with Windows 10 v1803 and NVDA 2018.1. Lacks support for attribute. </td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/breadcrumb/index.html">Breadcrumb</a></td>
+        <td><audio src="audio/breadcrumbs-nve.mp3" controls> </audio></td>
+        <td>Pass</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/button/button.html">Button</a></td>
+        <td><audio src="audio/button-nve.mp3" controls> </audio> </td>
+        <td>Fail</td>
+        <td> With Windows 10 1803 and NVDA 2018.1, will crash the browser page completely when encountering the mute button. </td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/checkbox/checkbox-1/checkbox-1.html">Checkbox (Two State)</a></td>
+        <td><audio src="audio/checkbox1-nve.mp3" controls> </audio></td>
+        <td>Pass</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/checkbox/checkbox-2/checkbox-2.html">Checkbox (Mixed State)</a></td>
+        <td><audio src="audio/checkbox2-nve.mp3" controls> </audio></td>
+        <td>Fail </td>
+        <td>Will not indicate mixed-state status in NVDA 2018.1 and Windows 10 1803. </td>
+     </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.1pattern/listbox-combo.html">Combobox with Listbox</a></td>
+        <td><audio src="audio/listboxcombo-nve.mp3" controls></audio> </td>
+        <td>Pass</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.1pattern/grid-combo.html">Combobox with Grid </a></td>
+        <td><audio src="audio/listboxcombo-nve.mp3" controls></audio></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.0pattern/combobox-autocomplete-both.html">ARIA 1.0 Combobox With Both List and Inline Autocomplete</a></td>
+        <td><audio src="audio/autocompletecomboboth-nve.mp3" controls></audio></td>
+        <td>Fail</td>
+        <td>NVDA doesn't pass through the up and down arrow for selection of combobox items</td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.0pattern/combobox-autocomplete-list.html">ARIA 1.0 Combobox With List Autocomplete </a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.0pattern/combobox-autocomplete-none.html">ARIA 1.0 Combobox without Autocomplete</a></td>
+        <td><audio src="audio/autocompletecombonone-nve.mp3" controls></audio></td>
+        <td>Pass</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/dialog-modal/dialog.html">Modal Dialog</a></td>
+        <td><audio src="audio/dialog-nve.mp3" controls> </audio></td>
+        <td>Fail</td>
+        <td>One should not be able to read the page behind a dialog when it is in focus, since it's modal. </td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/disclosure/disclosure-img-long-description.html">Image Disclosure</a></td>
+        <td><audio src="audio/imagedisclosure-nve.mp3" controls></audio></td>
+        <td>Fail</td>
+        <td>Figure caption is read when the buttton has focus</td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/disclosure/disclosure-faq.html">FAQ Disclosure</a></td>
+        <td><audio src="audio/disclosureFAQ-nve.mp3" controls> </audio></td>
+        <td>Pass</td>
+        <td>Works very well!</td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/feed/feed.html">Feed</a></td>
+        <td><audio src="audio/feed-nve.mp3"controls></audio></td>
+        <td>Fail</td>
+        <td>control + down and up arrows should move to next article but skips to a random point on an article 3 items down</td>
+    </tr>
+	 <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/grid/LayoutGrids.html">Layout Grid</a></td>
+        <td><audio src="audio/layoutgrid-nve.mp3" controls> </audio></td>
+        <td>Pass</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/grid/advancedDataGrid.html">Data Grid</a></td>
+        <td><audio src="audio/datagrid-nve.mp3"controls></audio></td>
+        <td>Fail</td>
+        <td>Right and left arrow don't move between cells. </td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/link/link.html">Link</a></td>
+        <td><audio src="audio/link-nve.mp3" controls></audio></td>
+        <td>Pass</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/listbox/listbox-scrollable.html">Scrollable Listbox</a></td>
+        <td><audio src="audio/listboxscrollable-nve.mp3" controls> </audio> </td>
+        <td>Pass</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/listbox/listbox-collapsible.html">Dropdown Listbox</a></td>
+        <td><audio src="audio/listboxcombo-nve.mp3" controls></audio></td>
+        <td>Fail</td>
+        <td>up and down arrow do not expand the list if collapsed</td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/listbox/listbox-rearrangeable.html">Rearrangeable Listbox</a></td>
+        <td><audio src="audio/listboxarrangeable-nve.mp3" controls> </audio> </td>
+        <td>Pass</td>
+        <td></td>
+    </tr>
+	 <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menubar/menubar-1/menubar-1.html">Navigation Menubar</a></td>
+        <td><audio src="audio/menubar-nve.mp3" controls></audio></td>
+        <td>Fail</td>
+        <td>Space, enter, arrow keys do not expand menu</td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menubar/menubar-2/menubar-2.html">Editor Menubar</a></td>
+        <td><audio src="audio/menubaredit-nve.mp3" controls> </audio></td>
+        <td>Pass</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menu-button/menu-button-links.html">Navigation Menu Button</a></td>
+        <td><audio src="audio/menubuttonlink-nve.mp3" controls></audio></td>
+        <td>Fail</td>
+        <td>Arrows do not open menu and move focus to first/last item</td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menu-button/menu-button-actions.html">Actions Menu Button Using element.focus()</a></td>
+        <td><audio src="audio/menubuttonactions-nve.mp3" controls> </audio></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menu-button/menu-button-actions-active-descendant.html">Actions Menu Button Example Using aria-activedescendant</a></td>
+        <td></td>
+        <td>Fail</td>
+        <td>Arrows do not open menu and move focus to first/last item
+        </td>
+    </tr>
+	<tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/radio/radio-1/radio-1.html">Radio Group Example Using Roving tabindex</a></td>
+        <td><audio src="/audio/radio1-nve.mp3" controls> </audio></td>
+        <td>Fail</td>
+        <td>Will only work best in focus mode, in browse mode, all radio buttons appear on one line and it's hard to tell which is active. </td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/radio/radio-2/radio-2.html">Radio Group Example Using aria-activedescendant</a></td>
+        <td><audio src="audio/radio2-nve.mp3" controls></audio></td>
+        <td>Pass</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/slider/slider-1.html">Horizontal Slider</a></td>
+        <td><audio src="audio/slider1-nvf.mp3" controls> </audio></td>
+        <td>Pass</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/slider/slider-2.html">Slider Examples with aria-orientation and aria-valuetext</a></td>
+        <td><audio src="audio/slider2-nve.mp3" controls></audio></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/slider/multithumb-slider.html">Horizontal Multi-Thumb Slider</a></td>
+        <td><audio src="audio/slider3-nve.mp3" controls> </audio> </td>
+        <td>Fail</td>
+        <td>Will not read sliders for their price but will read them for their value. </td>
+    </tr>
+	<tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/table/table.html">Table</a></td>
+        <td><audio src="audio/table-nve.mp3" controls></audio></td>
+        <td>Pass</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/tabs/tabs-2/tabs.html">Tabs with Manual Activation</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/tabs/tabs-1/tabs.html">Tabs with Automatic Activation</a></td>
+        <td><audio src="audio/tabs-nve.mp3" controls></audio></td>
+        <td>Pass</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/toolbar/toolbar.html">Toolbar</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/treeview/treeview-1/treeview-1a.html">File Directory Treeview Example Using Computed Properties</a></td>
+        <td><audio src="audio/treeview1a-nve.mp3" controlx></audio></td>
+        <td>Pass</td>
+        <td></td>
+    </tr>
+	<tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/treeview/treeview-1/treeview-1b.html">File Directory Treeview Example Using Declared Properties </a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/treeview/treeview-2/treeview-2a.html">Navigation Treeview Example Using Computed Properties</a></td>
+        <td><audio src="audio/treeview2a-nve.mp3" controls></audio></td>
+        <td>Pass</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/treeview/treeview-2/treeview-2b.html
+">Navigation Treeview Example Using Declared Properties</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+
+</table>
+
+        <h2>Narrator/Edge</h2>
+        <table>
+            <tr>
+                <th>Design Pattern</th>
+                <th>Audio</th>
+                <th>Results</th>
+                <th>Notes </th>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/accordion/accordion.html">Accordion</a></td>
+                <td><audio src="audio/accordion-ne.mp3" controls></audio></td>
+                <td>Fail</td>
+                <td>Arrow keys do not move focus to next header </td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/alert/index.html">Alert</a></td>
+                <td><audio src="audio/alert-nae.mp3" controls> </audio></td>
+                <td>Pass </td>
+                <td>Tested with Windows 10 1803. </td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/breadcrumb/index.html">Breadcrumb</a></td>
+                <td><audio src="audio/breadcrumb-ne.mp3" controls></audio></td>
+                <td>Pass</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/button/button.html">Button</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/checkbox/checkbox-1/checkbox-1.html">Checkbox (Two State)</a></td>
+                <td><audio src="audio/checkbox1-ne.mp3" controls></audio></td>
+                <td>Fail</td>
+                <td>No suggestions provided for ex 1. doesn't read first option in combobox ex 2 and 3 when they have focus</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/checkbox/checkbox-2/checkbox-2.html">Checkbox (Mixed State)</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+             </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.1pattern/listbox-combo.html">Combobox with Listbox</a></td>
+                <td><audio src="audio/listboxcombo-ne.mp3" controls></audio></td>
+                <td>Fail</td>
+                <td>First item selected in list not read first, when esc used no announcement made</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.1pattern/grid-combo.html">Combobox with Grid </a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.0pattern/combobox-autocomplete-both.html">ARIA 1.0 Combobox With Both List and Inline Autocomplete</a></td>
+                <td></td>
+                <td>Fail</td>
+                <td>Arrows don't move to listbox or when field has focus. escap does't remove text</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.0pattern/combobox-autocomplete-list.html">ARIA 1.0 Combobox With List Autocomplete </a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.0pattern/combobox-autocomplete-none.html">ARIA 1.0 Combobox without Autocomplete</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/dialog-modal/dialog.html">Modal Dialog</a></td>
+                <td><audio src="audio/dialog-nae.mp3" controls> </audio></td>
+                <td>Pass</td>
+                <td>With Windows build 17120, Narrator could crash if you attempt to travel passed the boundaries of the open dialog. </td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/disclosure/disclosure-img-long-description.html">Image Disclosure</a></td>
+                <td><audio src="audio/imagedisclosure-ne.mp3" controls></audio></td>
+                <td>Pass</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/disclosure/disclosure-faq.html">FAQ Disclosure</a></td>
+                <td><audio src="audio/disclosureFAQ-nae.mp3" controls> </audio></td>
+                <td>Pass</td>
+                <td>Great use of earcon!</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/feed/feed.html">Feed</a></td>
+                <td><audio src="audio/feed-ne.mp3" controls></audio></td>
+                <td>Pass</td>
+                <td></td>
+            </tr>
+             <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/grid/LayoutGrids.html">Layout Grid</a></td>
+                <td><audio src="audio/layoutgrid-nae.mp3" controls> </audio></td>
+                <td>Fail</td>
+                <td>Groupings on the grid are not announced.</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/grid/advancedDataGrid.html">Data Grid</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/listbox/listbox-scrollable.html">Scrollable Listbox</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/listbox/listbox-collapsible.html">Dropdown Listbox</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/listbox/listbox-rearrangeable.html">Rearrangeable Listbox</a></td>
+                <td><audio src="audio/listboxarrangeable-nae.mp3" controls> </audio> </td>
+                <td>Pass</td>
+                <td>Nice to know information when items move.</td>
+            </tr>
+             <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menubar/menubar-1/menubar-1.html">Navigation Menubar</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menubar/menubar-2/menubar-2.html">Editor Menubar</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menu-button/menu-button-links.html">Navigation Menu Button</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menu-button/menu-button-actions.html">Actions Menu Button Using element.focus()</a></td>
+                <td><audio src="audio/menubuttonaction-nae.mp3" controls></audio></td>
+                <td>Pass</td>
+                <td>Enter won't open actions menu. Strange. </td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menu-button/menu-button-actions-active-descendant.html">Actions Menu Button Example Using aria-activedescendant</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/radio/radio-1/radio-1.html">Radio Group Example Using Roving tabindex</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/radio/radio-2/radio-2.html">Radio Group Example Using aria-activedescendant</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/slider/slider-1.html">Horizontal Slider</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/slider/slider-2.html">Slider Examples with aria-orientation and aria-valuetext</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/slider/multithumb-slider.html">Horizontal Multi-Thumb Slider</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/table/table.html">Table</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/tabs/tabs-2/tabs.html">Tabs with Manual Activation</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/tabs/tabs-1/tabs.html
+        ">Tabs with Automatic Activation</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/toolbar/toolbar.html">Toolbar</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/treeview/treeview-1/treeview-1a.html">File Directory Treeview Example Using Computed Properties</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/treeview/treeview-1/treeview-1b.html">File Directory Treeview Example Using Declared Properties </a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/treeview/treeview-2/treeview-2b.html">Navigation Treeview Example Using Computed Properties</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/treeview/treeview-2/treeview-2b.html
+        ">Navigation Treeview Example Using Declared Properties</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+        
+        </table>
+
+        <h2>NVDA/Firefox</h2>
+
+        <table>
+            <tr>
+                <th>Design Pattern</th>
+                <th>Audio</th>
+                <th>Results</th>
+                <th>Notes </th>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/accordion/accordion.html">Accordion</a></td>
+                <td> <audio src="audio/accordion-nvf.mp3" controls> </audio></td>
+                <td>Pass</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/alert/index.html">Alert</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/breadcrumb/index.html">Breadcrumb</a></td>
+                <td><audio src="audio/breadcrumb-nvf.mp3" controls> </audio> </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/button/button.html">Button</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/checkbox/checkbox-1/checkbox-1.html">Checkbox (Two State)</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/checkbox/checkbox-2/checkbox-2.html">Checkbox (Mixed State)</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+             </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.1pattern/listbox-combo.html">Combobox with Listbox</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.1pattern/grid-combo.html">Combobox with Grid </a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.0pattern/combobox-autocomplete-both.html">ARIA 1.0 Combobox With Both List and Inline Autocomplete</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.0pattern/combobox-autocomplete-list.html">ARIA 1.0 Combobox With List Autocomplete </a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/combobox/aria1.0pattern/combobox-autocomplete-none.html">ARIA 1.0 Combobox without Autocomplete</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/dialog-modal/dialog.html">Modal Dialog</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/disclosure/disclosure-img-long-description.html">Image Disclosure</a></td>
+                <td><audio src="audio/disclosureImage-nvf.mp3" controls> </audio> </td>
+                <td>Fail </td>
+                <td>Will not announce expanded and collapsed states for the chart</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/disclosure/disclosure-faq.html">FAQ Disclosure</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/feed/feed.html">Feed</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+             <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/grid/LayoutGrids.html">Layout Grid</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/grid/advancedDataGrid.html">Data Grid</a></td>
+                <td><audio src="audio/datagrid-nvf.mp3" controls> </audio></td>
+                <td>Fail</td>
+                <td>Will not announce items under each column when using down arrow in focus mode to navigate among cells. Can see data in browse mode. </td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/listbox/listbox-scrollable.html">Scrollable Listbox</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/listbox/listbox-collapsible.html">Dropdown Listbox</a></td>
+                <td><audio src="audio/listboxcollapsable-nvf.mp3" controls> </audio></td>
+                <td>Pass</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/listbox/listbox-rearrangeable.html">Rearrangeable Listbox</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+             <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menubar/menubar-1/menubar-1.html">Navigation Menubar</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menubar/menubar-2/menubar-2.html">Editor Menubar</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menu-button/menu-button-links.html">Navigation Menu Button</a></td>
+                <td><audio src="audio/menubuttonlink-nvf.mp3" controls></td>
+                <td>Pass</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menu-button/menu-button-actions.html">Actions Menu Button Using element.focus()</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/menu-button/menu-button-actions-active-descendant.html">Actions Menu Button Example Using aria-activedescendant</a></td>
+                <td><audio src="/audio/menubuttonactivedescendant-nvf.mp3" controls> </audio></td>
+                <td>pass</td>
+                <td>How odd that NVDA does not give index count on this menu. </td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/radio/radio-1/radio-1.html">Radio Group Example Using Roving tabindex</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/radio/radio-2/radio-2.html">Radio Group Example Using aria-activedescendant</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/slider/slider-1.html">Horizontal Slider</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/slider/slider-2.html">Slider Examples with aria-orientation and aria-valuetext</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/slider/multithumb-slider.html">Horizontal Multi-Thumb Slider</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/table/table.html">Table</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/tabs/tabs-2/tabs.html">Tabs with Manual Activation</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/tabs/tabs-1/tabs.html
+        ">Tabs with Automatic Activation</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/toolbar/toolbar.html">Toolbar</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/treeview/treeview-1/treeview-1a.html">File Directory Treeview Example Using Computed Properties</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/treeview/treeview-1/treeview-1b.html">File Directory Treeview Example Using Declared Properties </a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/treeview/treeview-2/treeview-2b.html">Navigation Treeview Example Using Computed Properties</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/treeview/treeview-2/treeview-2b.html
+        ">Navigation Treeview Example Using Declared Properties</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+        
+        </table>
+
+    </main>
+  
+</body>
+</html>
